@@ -23,6 +23,7 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+
   /*
   ** Build configuration
   */
@@ -39,7 +40,12 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    postcss: [
+      require('postcss-nested')(),
+      require('postcss-responsive-type')(),
+      require('postcss-hexrgba')()
+    ]
   }
 }
 
