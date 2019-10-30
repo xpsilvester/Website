@@ -36,14 +36,19 @@ export default {
       default: function () {
         return [
           {
-            'title': '111',
-            'img': require('../assets/imgs/slider/1.jpg'),
-            'href': '/'
+            title: '1',
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572414853872&di=eba96553156fe3d2d6c2d57c9bad9983&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0130f15bebc08ea80121ab5dee3d5a.png%402o.png',
+            href: '/'
           },
           {
-            'title': '111',
-            'img': require('../assets/imgs/slider/1.jpg'),
-            'href': '/'
+            title: '2',
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572414853834&di=771f95ff47dc4284449d4fa305ffc880&imgtype=0&src=http%3A%2F%2Fstatic001.infoq.cn%2Fresource%2Fimage%2F22%2Fb5%2F228d7faec33b7dcb16c89b954abb32b5.jpg',
+            href: '/'
+          },
+          {
+            title: '3',
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572414853834&di=7126a19d25d6e50d3e99867853b7fd60&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201207%2F29%2F20120729224532_zWfMy.jpeg',
+            href: '/'
           }
         ]
       }

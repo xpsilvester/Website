@@ -1,0 +1,234 @@
+.activity{
+    width: 1290px;
+    height: 660px;
+    margin: 100px auto 85px;
+    box-shadow: darkgrey 10px 10px 30px 5px ;
+    .activity-left{
+        float: left;
+        width: 825px;
+        height: 660px;
+        .activity-first{
+            height: 220px;
+            .activity-first-title{
+                float: left;
+                height: 220px;
+                width: 220px;
+                background: #e40011;
+                color: #fff;
+                h3{
+                    margin-top: 70px;
+                    text-align: center;
+                    font-size: 28px;
+                }
+                p{
+                    margin-top: 5px;
+                    text-align: center;
+                }
+                span{
+                    display: block;
+                    width: 35px;
+                    height: 3px;
+                    background: #fff;
+                    margin: 20px auto;
+                }
+            }
+            .activity-first-second{
+                float: left;
+                width: 345px;
+                height: 220px;
+                img{
+                    width: 345px;
+                    height: 220px;
+                }
+            }
+            .activity-first-third{
+                float: left;
+                width: 260px;
+                height: 220px;
+                background: #3b3b3b;
+                padding-left: 36px;
+                color: #fff;
+                h3{
+                    font-size: 18px;
+                    margin-top: 50px;
+                }
+                p{
+                    font-size: 14px;
+                    color: #ccc;
+                    width: 198px;
+                    margin-top: 10px;
+                }
+                .browse,.favorites{
+                    float: left;
+                    height: 24px;
+                    line-height: 24px;
+                    width: 60px;
+                    padding-left: 32px;
+                    margin-top: 10px;
+                }
+                .browse{
+                    background: url('~assets/imgs/icon/browse_white.png') 0 0 no-repeat;
+                    background-size: 24px 24px;
+                }
+                .favorites{
+                    background: url('~assets/imgs/icon/favorites_white.png') 3px 0 no-repeat;
+                    background-size: 24px 24px;
+                    margin-left: 26px;
+                }
+            }
+        }
+        .activity-second{
+            height: 215px;
+            .activity-second-first{
+                float: left;
+                width: 565px;
+                height: 215px;
+                position: relative;
+                padding-left: 48px;
+                color: #8a8a8a;
+                h3{
+                    font-size: 18px;
+                    margin-top: 50px;
+                    color: #000;
+                }
+                p{
+                    font-size: 14px;
+                    width: 373px;
+                    margin-top: 10px;
+                }
+                .browse,.favorites{
+                    float: left;
+                    height: 24px;
+                    line-height: 24px;
+                    width: 60px;
+                    padding-left: 32px;
+                    margin-top: 10px;
+                }
+                .browse{
+                    background: url('~assets/imgs/icon/browse.png') 0 0 no-repeat;
+                    background-size: 24px 24px;
+                }
+                .favorites{
+                    background: url('~assets/imgs/icon/favorites.png') 3px 0 no-repeat;
+                    background-size: 24px 24px;
+                    margin-left: 26px;
+                }
+                .triangle{
+                    border-color: transparent transparent transparent #fff;
+                }
+            }
+            .activity-second-second{
+                float: left;
+                width: 260px;
+                height: 215px;
+                float: left;
+                img{
+                    width: 260px;
+                    height: 215px;
+                }
+            }
+        }
+        .activity-third{
+            .activity-third-first{
+                float: left;
+                height: 225px;
+                width: 230px;
+                background: #e40011;
+                position: relative;
+                color: #fff;
+                h3{
+                    margin-top: 35px;
+                    font-size: 72px;
+                    line-height: 60px;
+                    text-align: center;
+                }
+                h5{
+                    margin-top: 5px;
+                    font-size: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    font-size: 20px;
+                }
+                .triangle{
+                    border-color: transparent transparent transparent #e40011;
+                }
+            }
+            .activity-third-second{
+                float: left;
+                height: 225px;
+                width: 595px;
+                img{
+                    width: 595px;
+                    height: 225px;
+                }
+            }
+        }
+        .triangle{
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            margin-top: -10px;
+            width: 0;
+            height: 0;
+            border-width:10px 0 10px 10px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ccc;
+        }
+    }
+    .activity-right{
+        float: right;
+        width: 465px;
+        height: 660px;
+        .activity-top{
+            height: 290px;
+            img{
+                width: 465px;
+                height: 290px;
+            }
+        }
+        .activity-bottom{
+            position: relative;
+            padding:80px 60px 0;
+            color: #8a8a8a;
+            h3{
+                font-size: 24px;
+                color: #000;
+            }
+            p{
+                font-size: 18px;
+                width: 373px;
+                margin-top: 20px;
+            }
+            .browse,.favorites{
+                float: left;
+                height: 32px;
+                line-height: 32px;
+                width: 100px;
+                padding-left: 46px;
+                margin-top: 30px;
+                font-size: 20px;
+            }
+            .browse{
+                background: url('~assets/imgs/icon/browse.png') 0 0 no-repeat;
+            }
+            .favorites{
+                background: url('~assets/imgs/icon/favorites.png') 3px 0 no-repeat;
+                margin-left: 26px;
+            }
+            .triangle{
+                position: absolute;
+                top: -15px;
+                left: 50%;
+                margin-left: -10px;
+                width: 0;
+                height: 0;
+                border-width:0 10px 15px 10px;
+                border-style: solid;
+                border-color: transparent transparent #fff;
+            }
+        }
+    }
+}

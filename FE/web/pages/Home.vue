@@ -1,15 +1,17 @@
 <template>
   <section class="home">
     <Slider width="100%" height="600px"  />
-    <div class="activity"></div>
+    <Activity />
   </section>
 </template>
 
 <script>
 import Slider from '~/components/Slider.vue'
+import Activity from '~/components/Activity.vue'
 export default {
   components: {
-    Slider
+    Slider,
+    Activity
   }
 }
 </script>
