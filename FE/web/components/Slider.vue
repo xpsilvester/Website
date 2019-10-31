@@ -1,22 +1,20 @@
 <template>
   <div class="slider" :style="{ height: height , width: width }" @mouseover="clearInv" @mouseout="runInv">
     <div class="slider-img">
-      <a href="#">
-        <transition :name="transform == 0 ? 'slide-trans' : 'slide1-trans'">
-          <img v-if="isShow" :src="slides[nowIndex].img">
-        </transition>
-        <transition :name="transform == 0 ? 'slide-trans-old' : 'slide1-trans-old'">
-          <img v-if="!isShow" :src="slides[nowIndex].img">
-        </transition>
-      </a>
+      <transition :name="transform == 0 ? 'slide-trans' : 'slide1-trans'">
+        <img v-if="isShow" :src="slides[nowIndex].img">
+      </transition>
+      <transition :name="transform == 0 ? 'slide-trans-old' : 'slide1-trans-old'">
+        <img v-if="!isShow" :src="slides[nowIndex].img">
+      </transition>
     </div>
     <!-- <h2>{{slides[nowIndex].title}}</h2> -->
     <ul class="slides-pages">
-      <li class="prev" @click="goto(prevIndex)">&lt;</li>
       <li class="radius" :class="{active: index === nowIndex }" v-for="(item,index) in slides" :key="index" @click="goto(index)">
       </li>
-      <li class="next" @click="goto(nextIndex)">&gt;</li>
     </ul>
+    <div class="prev" @click="goto(prevIndex)"></div>
+    <div class="next" @click="goto(nextIndex)"></div>
   </div>
 </template>
 <script>
@@ -42,12 +40,12 @@ export default {
           },
           {
             title: '2',
-            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572414853834&di=771f95ff47dc4284449d4fa305ffc880&imgtype=0&src=http%3A%2F%2Fstatic001.infoq.cn%2Fresource%2Fimage%2F22%2Fb5%2F228d7faec33b7dcb16c89b954abb32b5.jpg',
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572496313101&di=5ead2f39fea8e1acfe8c93fb4fe3b5aa&imgtype=jpg&src=http%3A%2F%2Fimg3.imgtn.bdimg.com%2Fit%2Fu%3D3455898968%2C844918433%26fm%3D214%26gp%3D0.jpg',
             href: '/'
           },
           {
             title: '3',
-            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572414853834&di=7126a19d25d6e50d3e99867853b7fd60&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201207%2F29%2F20120729224532_zWfMy.jpeg',
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572496471539&di=81115d2bbe8a286460a881678373dbc5&imgtype=0&src=http%3A%2F%2Fimg01.3dmgame.com%2Fuploads%2Fallimg%2F140724%2F153_140724103337_1.jpg',
             href: '/'
           }
         ]

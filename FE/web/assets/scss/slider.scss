@@ -12,14 +12,11 @@
         position: absolute;
         left: 0;
         width: 100%;
-        a{
-            display: block;
+        img{
             width: 100%;
-            img{
-                width: 100%;
-                position: absolute;
-                left: 0;
-            }
+            position: absolute;
+            left: 0;
+            display: block;
         }
     }
     .slide-trans-enter-active{
@@ -66,23 +63,38 @@
                 width: 10px;
                 height: 10px;
                 border-radius: 6px;
-                background: #000;
-                opacity: .2;
+                background: #666;
                 margin: 3px 5px;
             }
             &.active{
                 opacity: 1;
                 background: #fff;
             }
-            &.prev{
-                margin-right: 5px;
-                display: none;
-            }
-            &.next{
-                margin-left: 5px;
-                display: none;
-            }
         }
-        
+    }
+    .prev,.next{
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        margin-top: -50px;
+        color: #fff;
+        width: 100px;
+        height: 100px;
+        display: none;
+    }
+    &:hover{
+        .prev,.next{
+            display: block;
+        }
+    }
+    .prev{
+        left: 0;
+        background: url('~assets/imgs/icon/prev.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .next{
+        right: 0;
+        background: url('~assets/imgs/icon/next.png') 0 0 no-repeat;
+        background-size: 100%;
     }
 }
