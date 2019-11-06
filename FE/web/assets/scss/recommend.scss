@@ -1,5 +1,100 @@
 .recommend{
     width: 100%;
-    height: 300px;
-    border: 1px solid #ccc;
+    height: 915px;
+    position: relative;
+    .title{
+        height: 115px;
+        text-align: center;
+        h3{
+            font-size: 34px;
+            color: #4c4c4c;
+        }
+        p{
+            margin-top: 10px;
+            font-size:14px;
+            color: #bdbdbd;
+        }
+    }
+    .recommend-slider{
+        width: 1200px;
+        min-height: 800px;
+        margin: 0 auto;
+        z-index: 10;
+        position: relative;
+        background: transparent;
+        .gallery{
+            width: 1120px;
+            margin: 0 auto;
+            overflow: hidden;
+            height: 800px;
+            ul{
+                transition: all .5s cubic-bezier(.55, 0, .1, 1);
+                li{
+                    width: 305px;
+                    height: 310px;
+                    float: left;
+                    margin: 0 34px 45px;
+                    background: #fff;
+                    img{
+                        width: 305px;
+                        height: 205px;
+                    }
+                    .detail{
+                        padding: 25px;
+                        h4{
+                            text-align: center;
+                            overflow: hidden;
+                            font-size: 14px;
+                            height: 20px;
+                            line-height: 20px;
+                            margin-bottom: 12px;
+                        }
+                        .date{
+                            float: left;
+                            color: #bdbdbd;
+                            font-size: 12px;
+                        }
+                        .more{
+                            float: right;
+                            color: #bdbdbd;
+                            text-decoration: none;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .prev,.next{
+            height: 60px;
+            width: 40px;
+            background-color: rgba(0,0,0,0.2);
+            position: absolute;
+            top: 315px;
+            cursor: pointer;
+        }
+        .next{
+            background-image: url('~assets/imgs/icon/next.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            right: 0;
+            background-size: 30px 30px;
+        }
+        .prev{
+            background-image: url('~assets/imgs/icon/prev.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            left: 0;
+            background-size: 30px 30px;
+        }
+    }
+    .background{
+        width: 100%;
+        min-width: 1290px;
+        height: 670px;
+        background: #e40011;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
 }
