@@ -4,6 +4,7 @@
     <Activity />
     <Recommend />
     <Special />
+    <Footer />
   </section>
 </template>
 
@@ -12,12 +13,14 @@ import Slider from '~/components/Slider.vue'
 import Activity from '~/components/Activity.vue'
 import Recommend from '~/components/Recommend.vue'
 import Special from '~/components/Special.vue'
+import Footer from '~/components/Footer.vue'
 export default {
   components: {
     Slider,
     Activity,
     Recommend,
-    Special
+    Special,
+    Footer
   }
 }
 </script>
