@@ -30,49 +30,49 @@ export default {
       galleryList:[
         {
           id: 1,
-          img:'http://img1.imgtn.bdimg.com/it/u=301510610,3922289225&fm=26&gp=0.jpg',
+          img:'https://alessioangeloro.it/wp-content/uploads/2016/06/css3_media_query.png',
           title: '查询实例如果文档宽度小于 300 像素则修改背',
           date: '2015-01-11',
           url:'#'
         },
         {
           id: 2,
-          img:'http://img3.imgtn.bdimg.com/it/u=869353456,4177450797&fm=26&gp=0.jpg',
+          img:'https://i0.wp.com/www.silocreativo.com/wp-content/uploads/2016/11/media-query-funciona-css.png?fit=666%2C370&quality=100&strip=all&ssl=1',
           title: '查询实例如果文档宽度小于 300 像素则修改背',
           date: '2015-01-11',
           url:'#'
         },
         {
           id: 3,
-          img:'http://img3.imgtn.bdimg.com/it/u=943952439,1100964234&fm=26&gp=0.jpg',
+          img:'https://alessioangeloro.it/wp-content/uploads/2016/06/css3_media_query.png',
           title: '查询实例如果文档宽度小于 300 像素则修改背',
           date: '2015-01-11',
           url:'#'
         },
         {
           id: 4,
-          img:'http://img5.imgtn.bdimg.com/it/u=2316638757,642138572&fm=26&gp=0.jpg',
+          img:'https://i0.wp.com/www.silocreativo.com/wp-content/uploads/2016/11/media-query-funciona-css.png?fit=666%2C370&quality=100&strip=all&ssl=1',
           title: '查询实例如果文档宽度小于 300 像素则修改背',
           date: '2015-01-11',
           url:'#'
         },
         {
           id: 5,
-          img:'http://img0.imgtn.bdimg.com/it/u=1242054797,1604644057&fm=26&gp=0.jpg',
+          img:'https://alessioangeloro.it/wp-content/uploads/2016/06/css3_media_query.png',
           title: '查询实例如果文档宽度小于 300 像素则修改背',
           date: '2015-01-11',
           url:'#'
         },
         {
           id: 6,
-          img:'http://hiphotos.baidu.com/feed/pic/item/7af40ad162d9f2d33183a7fba3ec8a136327cc10.jpg',
+          img:'https://i0.wp.com/www.silocreativo.com/wp-content/uploads/2016/11/media-query-funciona-css.png?fit=666%2C370&quality=100&strip=all&ssl=1',
           title: '查询实例如果文档宽度小于 300 像素则修改背',
           date: '2015-01-11',
           url:'#'
         },
         {
           id: 7,
-          img:'http://img2.imgtn.bdimg.com/it/u=230361599,3007241127&fm=26&gp=0.jpg',
+          img:'https://alessioangeloro.it/wp-content/uploads/2016/06/css3_media_query.png',
           title: '查询实例如果文档宽度小于 300 像素则修改背',
           date: '2015-01-11',
           url:'#'
@@ -80,14 +80,14 @@ export default {
         ,
         {
           id: 8,
-          img:'http://img0.imgtn.bdimg.com/it/u=3520224759,3900359425&fm=26&gp=0.jpg',
+          img:'https://i0.wp.com/www.silocreativo.com/wp-content/uploads/2016/11/media-query-funciona-css.png?fit=666%2C370&quality=100&strip=all&ssl=1',
           title: '查询实例如果文档宽度小于 300 像素则修改背',
           date: '2015-01-11',
           url:'#'
         },
         {
           id: 9,
-          img:'http://img0.imgtn.bdimg.com/it/u=3050741762,3087249566&fm=26&gp=0.jpg',
+          img:'https://alessioangeloro.it/wp-content/uploads/2016/06/css3_media_query.png',
           title: '查询实例如果文档宽度小于 300 像素则修改背',
           date: '2015-01-11',
           url:'#'

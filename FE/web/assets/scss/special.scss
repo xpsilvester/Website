@@ -1,0 +1,52 @@
+.special{
+    width:100%;
+    height: 580px;
+    overflow: hidden;
+    background: url('~assets/imgs/special.jpg') center center no-repeat;
+    .special-content{
+        width: 1110px;
+        height: 360px;
+        margin: 125px auto 90px;
+        background: #fff;
+        position: relative;
+        padding: 95px 0 0 580px;
+        cursor: pointer;
+        img{
+            height: 360px;
+            width: 504px;
+            position: absolute;
+            top: -60px;
+            left: 45px;
+        }
+        .more{
+            width: 50px;
+            height: 30px;
+            background: #e40011;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 14px;
+            color: #b8b8b8;
+        }
+        .titleSmall{
+            margin: 5px 0 18px;
+        }
+        .line{
+            width: 25px;
+            height: 4px;
+            background: #a23e36;
+            margin-bottom: 20px;
+        }
+    }
+}
