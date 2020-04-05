@@ -36,7 +36,7 @@
         </div>
         <div class="list-content" ref="content" @scroll="handleScroll">
             <div class="list-phantom" :style="{height: contentHeight}"></div>
-            <ul ref="contentul">
+            <ul :style="{transform: 'translate3d(0, '+transformY + 'px, 0)'}">
                 <li v-for="(item,index) in tableVisible" :key="item.id">
                     <div class="list-column" style="width: 50px;">
                         {{item.id}}
@@ -79,31 +79,55 @@
                 title: 'list',
                 tableData: [],
                 tableVisible: [],
-                itemHeight: 50
+                itemHeight: 50,
+                transformY: 0,
+                startIndex:0,
+                contentUl: 500,
+                canRun: true //设置节流
             }
         },
         methods: {
-            deleteRow(index, rows) {
-                rows.splice(index, 1)
+            // 函数节流，频繁操作中间隔 delay 的时间才处理一次
+            throttle(fn,delay = 200){
+                let self = this
+                return function(...args){
+                    if(!self.canRun){
+                        return;
+                    }
+                    self.canRun = false;
+                    setTimeout(()=>{
+                        fn.apply(this,args)
+                        //console.log('throttle')
+                        self.canRun = true
+                    },delay)
+                }
             },
-            updateVisibleData(scrollTop) {
-                scrollTop = scrollTop || 0;
-                const visibleCount = Math.ceil(500 / this.itemHeight) // 取得可见区域的可见列表项数量
+            deleteRow(index, rows) {
+                const end = this.startIndex + this.visibleCount // 取得可见区域的结束数据索引
+                rows.splice(index+this.startIndex, 1)
+                this.tableVisible = this.tableData.slice(this.startIndex, end) // 计算出可见区域对应的数据，让 Vue.js 更新
+            },
+            updateVisibleData() {
+                let scrollTop = this.$refs.content.scrollTop || 0
                 const start = Math.floor(scrollTop / this.itemHeight) // 取得可见区域的起始数据索引
-                const end = start + visibleCount; // 取得可见区域的结束数据索引
+                this.startIndex = start
+                const end = start + this.visibleCount // 取得可见区域的结束数据索引
                 this.tableVisible = this.tableData.slice(start, end) // 计算出可见区域对应的数据，让 Vue.js 更新
                 // 把可见区域的 top 设置为起始元素在整个列表中的位置（使用 transform 是为了更好的性能）
-                this.$refs.contentul.style.webkitTransform = `translate3d(0, ${ start * 50 }px, 0)`;
+                //this.$refs.contentul.style.webkitTransform = `translate3d(0, ${ start * 50 }px, 0)`;
+                this.transformY = start * 50
             },
             handleScroll() {
-                let scrollTop = this.$refs.content.scrollTop
-                this.updateVisibleData(scrollTop)
-                console.log(scrollTop)
+                this.throttle(this.updateVisibleData,100)()
+                //console.log(scrollTop)
             }
         },
         computed: {
             contentHeight() {
                 return this.tableData.length * this.itemHeight + 'px';
+            },
+            visibleCount(){
+                return Math.ceil(this.contentUl / this.itemHeight) // 取得可见区域的可见列表项数量
             }
         },
         mounted(){
