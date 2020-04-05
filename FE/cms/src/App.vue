@@ -10,14 +10,17 @@
 </template>
 
 <script>
-export default {
-  name: 'App',
-  components: {
-    
+  export default {
+    name: 'App',
+    components: {
+
+    },
+    methods: {
+      
+    }
   }
-}
 </script>
 
 <style lang="scss">
-@import './scss/common.scss';
+  @import './scss/common.scss';
 </style>
