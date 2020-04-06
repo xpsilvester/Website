@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    {{title}}
+    <h1>{{title}}</h1>
   </div>
 </template>
 
@@ -9,8 +9,17 @@ export default {
     name:'Home',
     data(){
         return {
-            title: 'home'
+            title: 'home',
         }
+    },
+    components:{
+      
+    },
+    methods:{
+      
+    },
+    created(){
+      
     }
 }
 </script>
