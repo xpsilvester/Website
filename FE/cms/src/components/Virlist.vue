@@ -33,8 +33,7 @@
                 transformY: 0,
                 startIndex: 0,
                 contentUl: 500,
-                tableVisible: [],
-                canRun: true //设置节流
+                tableVisible: []
             }
         },
         mixins:[throttle],
