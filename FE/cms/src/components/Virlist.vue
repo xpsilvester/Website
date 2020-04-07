@@ -77,7 +77,8 @@
         },
         computed: {
             contentHeight() {
-                return this.tableData.length * this.itemHeight + 'px';
+                //return this.tableData.length * this.itemHeight + 'px'; //Memory 38M
+                return (this.tableVisible.length + this.startIndex + 1) * this.itemHeight + 'px'; ////Memory 32M
             },
             visibleCount() {
                 return Math.ceil(this.contentUl / this.itemHeight) // 取得可见区域的可见列表项数量
