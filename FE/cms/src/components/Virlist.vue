@@ -23,6 +23,8 @@
 </template>
 
 <script>
+    //混入节流函数
+    import {throttle} from '../minxins/throttle.js'
     export default {
         name: 'Virlist',
         data() {
@@ -35,6 +37,7 @@
                 canRun: true //设置节流
             }
         },
+        mixins:[throttle],
         props: {
             msg: String,
             tableData: Array,
@@ -58,21 +61,6 @@
                 // 把可见区域的 top 设置为起始元素在整个列表中的位置（使用 transform 是为了更好的性能）
                 //this.$refs.contentul.style.webkitTransform = `translate3d(0, ${ start * 50 }px, 0)`;
                 this.transformY = start * 50
-            },
-            // 函数节流，频繁操作中间隔 delay 的时间才处理一次
-            throttle(fn, delay = 200) {
-                let self = this
-                return function (...args) {
-                    if (!self.canRun) {
-                        return;
-                    }
-                    self.canRun = false;
-                    setTimeout(() => {
-                        fn.apply(this, args)
-                        //console.log('throttle')
-                        self.canRun = true
-                    }, delay)
-                }
             }
         },
         computed: {
