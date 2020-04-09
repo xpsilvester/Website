@@ -3,6 +3,7 @@ import Router from "vue-router"
 import Home from './pages/Home.vue'
 import List from './pages/List.vue'
 import ChartTable from './pages/ChartTable.vue'
+import Table from './pages/Table.vue'
 
 Vue.use(Router)
 
@@ -17,6 +18,9 @@ const router = new Router({
     },{
         path: '/charttable',
         component: ChartTable
+    },{
+        path: '/table',
+        component: Table
     }]
 })
 

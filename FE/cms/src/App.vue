@@ -2,9 +2,10 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <div class="link">
-      <router-link to="/home">Go to Home</router-link>
-      <router-link to="/list">Go to List</router-link>
-      <router-link to="/charttable">Go to Chart</router-link>
+      <router-link to="/home">Home</router-link>
+      <router-link to="/list">List</router-link>
+      <router-link to="/charttable">Chart</router-link>
+      <router-link to="/table">Table</router-link>
     </div>
     <router-view></router-view>
   </div>
