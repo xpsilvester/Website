@@ -11,6 +11,11 @@ module.exports = {
     //指定生成的 index.html 的输出路径 (相对于 outputDir)。也可以是一个绝对路径。
     //indexPath: 'home'
 
+    transpileDependencies: [
+        'vue-echarts',
+        'resize-detector'
+    ],
+
     //配置代理
     devServer: {
         proxy: {
