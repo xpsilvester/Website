@@ -6,6 +6,7 @@
       <router-link to="/list">List</router-link>
       <router-link to="/charttable">Chart</router-link>
       <router-link to="/table">Table</router-link>
+      <router-link to="/chartmap">Map</router-link>
     </div>
     <router-view></router-view>
   </div>

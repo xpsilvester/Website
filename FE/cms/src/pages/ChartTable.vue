@@ -34,6 +34,7 @@ export default {
   mounted() {
   },
   created() {
+     
      this.orgOptions = {
         title: {
             text: '折线图'

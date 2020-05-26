@@ -20,9 +20,12 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-                target: '<url>',
+                target: 'http://localhost:3000/',
                 ws: true,
-                changeOrigin: true
+                changeOrigin: true,
+                pathRewrite:{
+                    '^/api':'' // 需要rewrite重写的
+                }
             },
             '/foo': {
                 target: '<other_url>'
